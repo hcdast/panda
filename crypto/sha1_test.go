@@ -1,10 +1,17 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:34:13
+ * @Description:
+ */
 package crypto_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/hzwy23/panda/crypto"
+	"example-hauth/panda/crypto"
 )
 
 func TestSha1(t *testing.T) {

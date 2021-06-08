@@ -1,10 +1,10 @@
 package logger
 
 import (
+	"example-hauth/panda/config"
 	"os"
 	"path/filepath"
 	"sync"
-	"github.com/hzwy23/panda/config"
 )
 
 const (
@@ -18,11 +18,11 @@ const (
 
 // 日志文件配置类
 type Config struct {
-	logOutputDir  string
-	logName string
-	logLevel    string
-	lock        *sync.RWMutex
-	msg         []string
+	logOutputDir string
+	logName      string
+	logLevel     string
+	lock         *sync.RWMutex
+	msg          []string
 }
 
 // 创建日志文件配置实例对象
@@ -32,18 +32,18 @@ func NewConfig(file ...string) *Config {
 	fp := DefaultConfigFile
 	if len(file) == 1 {
 		fp = file[0]
-	} else if len(file) > 1{
+	} else if len(file) > 1 {
 		panic("NewConfig最多只能接收一个参数")
 	}
 
 	prefix := os.Getenv(ApplicationBase)
-	configFile:=filepath.Join(prefix,fp)
+	configFile := filepath.Join(prefix, fp)
 
 	conf := &Config{
-		logOutputDir:  "temp",
-		logLevel:    "info",
-		logName:     "wisrc.log",
-		lock:        new(sync.RWMutex),
+		logOutputDir: "temp",
+		logLevel:     "info",
+		logName:      "wisrc.log",
+		lock:         new(sync.RWMutex),
 	}
 	return conf.Load(configFile)
 }
@@ -75,8 +75,8 @@ func (r *Config) SetLogOutputDir(p string) {
 }
 
 // 获取日志输出文件地址以及文件名称
-func (r *Config)GetLogFile() string{
-	return filepath.Join(r.logOutputDir,r.logName)
+func (r *Config) GetLogFile() string {
+	return filepath.Join(r.logOutputDir, r.logName)
 }
 
 // 加载配置文件，Load将会指定文件中配置信息，覆盖当前实例对象中的日志配置信息

@@ -1,10 +1,17 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:33:58
+ * @Description:
+ */
 package config_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/hzwy23/panda/config"
+	"example-hauth/panda/config"
 )
 
 func TestLoad(t *testing.T) {

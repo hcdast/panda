@@ -1,9 +1,16 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:35:45
+ * @Description:
+ */
 package logger_test
 
 import (
 	"testing"
 
-	"github.com/hzwy23/panda/logger"
+	"example-hauth/panda/logger"
 )
 
 func TestNewLogger(t *testing.T) {

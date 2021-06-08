@@ -1,3 +1,10 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:35:06
+ * @Description:
+ */
 package jwt_test
 
 import (
@@ -5,7 +12,7 @@ import (
 
 	"fmt"
 
-	"github.com/hzwy23/panda/jwt"
+	"example-hauth/panda/jwt"
 )
 
 func TestToken(t *testing.T) {

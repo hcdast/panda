@@ -1,9 +1,17 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:36:11
+ * @Description:
+ */
 package route
 
 import (
-	"github.com/julienschmidt/httprouter"
 	"net/http"
 	"path"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 // 正则路由匹配到的参数列表，
@@ -69,9 +77,9 @@ func ServeFiles(url string, root http.FileSystem) {
 	defaultHttprouter.ServeFiles(path.Join(url, "*filepath"), root)
 }
 
-func RESTful(path string, c ControllerHandle){
-	Handler("GET",path,c.Get)
-	Handler("POST",path,c.Post)
-	Handler("PUT",path,c.Put)
-	Handler("DELETE",path,c.Delete)
+func RESTful(path string, c ControllerHandle) {
+	Handler("GET", path, c.Get)
+	Handler("POST", path, c.Post)
+	Handler("PUT", path, c.Put)
+	Handler("DELETE", path, c.Delete)
 }

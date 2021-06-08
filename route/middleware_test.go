@@ -1,10 +1,17 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:36:28
+ * @Description:
+ */
 package route_test
 
 import (
+	"example-hauth/panda/route"
 	"fmt"
 	"net/http"
 	"testing"
-	"github.com/hzwy23/panda/route"
 )
 
 type a struct {
@@ -34,12 +41,11 @@ func TestNewMiddle(t *testing.T) {
 	http.ListenAndServe(":8080", mid)
 }
 
-
 func TestNewMiddleware(t *testing.T) {
-	mux:= route.NewRouter()
+	mux := route.NewRouter()
 
-	mux.POST("/:name/:bcd",Index2)
-	mux.HandlerFunc("POST","/",func(w http.ResponseWriter,r *http.Request){
+	mux.POST("/:name/:bcd", Index2)
+	mux.HandlerFunc("POST", "/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("hi HandleFunc")
 	})
 

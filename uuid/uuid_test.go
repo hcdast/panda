@@ -1,10 +1,17 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:36:43
+ * @Description:
+ */
 package uuid_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/hzwy23/panda/uuid"
+	"example-hauth/panda/uuid"
 )
 
 func TestUuid(t *testing.T) {

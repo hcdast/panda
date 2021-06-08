@@ -1,8 +1,15 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:36:04
+ * @Description:
+ */
 package route_test
 
 import (
+	"example-hauth/panda/route"
 	"fmt"
-	"github.com/hzwy23/panda/route"
 	"net/http"
 	"testing"
 )

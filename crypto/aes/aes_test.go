@@ -1,10 +1,17 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-07 11:34:27
+ * @Description:
+ */
 package aes_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/hzwy23/panda/crypto/aes"
+	"example-hauth/panda/crypto/aes"
 )
 
 func TestDefaultCrypt(t *testing.T) {
