@@ -1,3 +1,10 @@
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-10 13:25:38
+ * @Description:
+ */
 package config
 
 import (
@@ -50,7 +57,6 @@ func Load(filePath string, typ ...ConfType) (Handle, error) {
 		// JSON 类型配置文件读取方式
 		return createINIConfig(filePath)
 	}
-
 	// 无效的配置文件类型
 	return newEmptyConfig()
 }

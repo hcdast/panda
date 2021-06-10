@@ -1,6 +1,10 @@
-// Copyright 2016 The Hzwy23. All rights reserved.
-// Use of this source code is governed by a BSD-style
-// license that can be found in the LICENSE file.
+/*
+ * @Author: hc
+ * @Date: 2021-06-07 11:04:31
+ * @LastEditors: hc
+ * @LastEditTime: 2021-06-10 16:16:13
+ * @Description: 解析配置文件（.conf）
+ */
 
 package config
 
@@ -50,7 +54,6 @@ func (c *INIConfig) getResource(dir string) error {
 	conf := strings.Split(string(cont), "\n")
 	c.lock.Lock()
 	defer c.lock.Unlock()
-
 	for _, val := range conf {
 		val = strings.TrimSpace(val)
 		val = strings.TrimRight(val, "\r")
