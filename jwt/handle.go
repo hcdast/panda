@@ -100,6 +100,6 @@ func NewHandle(conf *Config) *Handle {
 	}
 	return &Handle{
 		Config: conf,
-		lock:      new(sync.RWMutex),
+		lock:   new(sync.RWMutex),
 	}
 }

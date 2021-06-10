@@ -8,7 +8,7 @@
 //
 //	import (
 //		"testing"
-//		"github.com/hzwy23/panda/logger"
+//		"example-hauth/panda/logger"
 //	)
 //
 //	func TestNewLogger(t *testing.T) {

@@ -14,7 +14,7 @@
 //		"fmt"
 //		"testing"
 //
-//		"github.com/hzwy23/panda/uuid"
+//		"example-hauth/panda/uuid"
 //	)
 //
 //	func TestUuid(t *testing.T) {

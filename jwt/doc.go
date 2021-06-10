@@ -9,7 +9,7 @@
 //
 //		"fmt"
 //
-//		"github.com/hzwy23/panda/jwt"
+//		"example-hauth/panda/jwt"
 //	)
 //
 //	func TestToken(t *testing.T) {

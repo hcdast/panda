@@ -9,7 +9,7 @@
 //	 import (
 //		 "fmt"
 //		 "testing"
-//		 "github.com/hzwy23/panda/config"
+//		 "example-hauth/panda/config"
 //	 )
 //
 //	 func TestLoad(t *testing.T) {

@@ -9,7 +9,7 @@
 //
 //		import (
 //			"testing"
-//			"github.com/hzwy23/panda/route"
+//			"example-hauth/panda/route"
 //			"net/http"
 //			"fmt"
 //		)
